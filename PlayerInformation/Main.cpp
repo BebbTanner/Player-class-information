@@ -30,7 +30,6 @@ void playerName() {
 }
 
 void chooseChar() {
-	characterInfo C;
 	int classChoice;
 	char confirmSelect;
 	do {
