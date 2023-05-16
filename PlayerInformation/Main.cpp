@@ -8,13 +8,14 @@ void chooseChar();
 
 int main() {
 	playerInfo P;
-	characterInfo C;
 
 	//This will make a call to the playername funciton
 	playerName();
+	cout << endl; 
 
 	//This will make a call to the choosechar function
 	chooseChar();
+	cout << endl;
 }
 
 
@@ -47,6 +48,7 @@ void chooseChar() {
 		cout << "*           9.) Lone Gunslinger                   *" << endl;
 		cout << "***************************************************" << endl;
 		cin >> classChoice;
+		cout << endl;
 
 		switch (classChoice) {
 		case 0:
@@ -93,8 +95,10 @@ void chooseChar() {
 			break;
 		}
 
+		cout << endl;
 		cout << "Are you sure this is the class you want to play(Y or N)? " << endl;
 		cin >> confirmSelect;
+		cout << endl;
 
 	} while (confirmSelect == 'N' || confirmSelect == 'n');
 }
